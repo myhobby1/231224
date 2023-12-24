@@ -1,0 +1,15 @@
+2023-12-24-3:45
+
+ * 파일에 문자열을 출력하는 예제
+
+#include <stdio.h>
+
+ int main(void)
+ {
+   char str[20] = "I have a dream.";
+   File *fp = fopen("fputs_text.txt", "w");
+   fputs(str, fp);
+   fclose(fp);
+ 
+   return 0;
+  }
